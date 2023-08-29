@@ -14,7 +14,7 @@ public class AccountApi {
     public ResponseEntity<Account> update(Account account){
 
     }
-    public ResponseEntity<Account> delete(String id){
+    public void delete(String id){
 
     }
     public ResponseEntity<Account> pagination(){
