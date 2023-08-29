@@ -5,16 +5,16 @@ import org.springframework.http.ResponseEntity;
 
 public class AccountApi {
 
-    public ResponseEntity<Account> get(){
+    public ResponseEntity<Account> get(String id){
 
     }
-    public ResponseEntity<Account> save(){
+    public ResponseEntity<Account> save(Account account){
 
     }
-    public ResponseEntity<Account> update(){
+    public ResponseEntity<Account> update(Account account){
 
     }
-    public ResponseEntity<Account> delete(){
+    public ResponseEntity<Account> delete(String id){
 
     }
     public ResponseEntity<Account> pagination(){
