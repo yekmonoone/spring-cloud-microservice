@@ -2,7 +2,9 @@ package com.springcloudmicroservice.accountservice.service;
 
 import com.springcloudmicroservice.accountservice.entity.Account;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AccountService {
 
     public Account get(String id){
