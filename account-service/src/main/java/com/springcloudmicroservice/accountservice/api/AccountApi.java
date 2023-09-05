@@ -20,6 +20,7 @@ public class AccountApi {
         return ResponseEntity.ok(accountService.get(id));
     }
 
+    // Add this method to the AccountApi class:
     @PostMapping
     public ResponseEntity<Account> save(@RequestBody Account account){
         return ResponseEntity.ok(accountService.save(account));
