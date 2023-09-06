@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class AccountService {
@@ -32,4 +34,7 @@ public class AccountService {
 
     }
 
+    public List<Account> getAll() {
+        return accountRepository.findAll();
+    }
 }

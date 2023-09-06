@@ -5,6 +5,8 @@ import com.springcloudmicroservice.accountservice.service.AccountService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("account")
 public class AccountApi {
@@ -34,6 +36,11 @@ public class AccountApi {
     @DeleteMapping
     public void delete(String id){
         accountService.delete(id);
+    }
+
+    @GetMapping()
+    public ResponseEntity<List<Account>> getAll(){
+        return ResponseEntity.ok(accountService.getAll());
     }
 
 }
