@@ -1,4 +1,4 @@
-package com.springcloudmicroservice.accountservice;
+package com.springcloudmicroservice.accountservice.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -39,5 +39,10 @@ public class CassandraConfiguration extends AbstractCassandraConfiguration {
     @Override
     public SchemaAction getSchemaAction() {
         return SchemaAction.CREATE_IF_NOT_EXISTS;
+    }
+
+    @Override
+    public String[] getEntityBasePackages() {
+        return new String[]{"com.springcloudmicroservice.accountservice.entity"};
     }
 }
