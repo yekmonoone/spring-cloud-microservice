@@ -28,7 +28,7 @@ public class AccountApi {
 
     @PutMapping
     public ResponseEntity<Account> update(Account account){
-        return ResponseEntity.ok(accountService.update(account));
+        return ResponseEntity.ok(accountService.update(account.getId(),account));
     }
 
     @DeleteMapping
