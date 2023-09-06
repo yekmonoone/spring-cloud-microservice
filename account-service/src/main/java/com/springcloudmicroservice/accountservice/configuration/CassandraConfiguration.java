@@ -1,4 +1,4 @@
-package com.springcloudmicroservice.accountservice;
+package com.springcloudmicroservice.accountservice.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
